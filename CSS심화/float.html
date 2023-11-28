@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="float.css" rel="stylesheet">
+</head>
+<body>
+    <pre style="font-family: sans-serif;">
+        [용도-1] 이미지 주변을 둘러싸는 텍스트용.
+
+        요소에 float을 적용하면, 해당 요소는 뜬 상태가 된다.
+        요소가 있던 공간이 비면서, 빈 공간을 채우기 위해
+        그 다음의 요소가 밀고 올라온다. 그리고 밀고 올라온
+        요소는 컨텐츠(글자) 주변을 둘러 싸면서 나타난다.
+
+        [용도-2] 나란히 배치 불가능한 요소를 나란히 배치하는용.
+
+        나란히 배치하고픈 요소들에 float을 적용하면 해당 요소는 뜬
+        상태가 되면서 나란히 오게 된다.
+
+        -나란히 배치시킨 요소들의 다음 요소는 위로 밀고 올라오기 때문에,
+         제자리로 보내기 위해 clear:both;로 float의 영향을 해제
+         시켜야 한다. 이럴 땐 부모요소에 직접 높이값을 주어야 된다.
+    </pre>
+
+    <section id="sec01">
+        <h2>img에 float:left; 적용</h2>
+        <!--https://www.lipsum.com/-->
+        <p> 
+            <img src="floatimg.jpg">
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <section id="sec02">
+        <h2>img에 float: right; 적용</h2>
+        <p>
+            <img src="floatimg2.jpg">
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <section id="sec03">
+        <h2>p들에게 float:left; 적용</h2>
+        <p>
+            [p-1]<br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+        <p>
+            [p-2] <br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <section id="sec04">
+        <h2>p들에게 float:right; 적용</h2>
+        <p>
+            [p-3] <br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+        <p>
+            [p-4] <br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <section id="sec05">
+        <h2>p-5에게 float:left; 적용,
+            p-6에게 float:right; 적용
+        </h2>
+
+        <p class="p-lft">
+            [p-5] <br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+        <p class="p-rgt">
+            [p-6] <br>
+            Lorem Ipsum is simply dummy 
+            text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s,
+             \when an unknown printer took a 
+             galley of type and scrambled it to 
+             make a type specimen book. It has 
+             survived not only five centuries, 
+             but also the leap into electronic typesetting, 
+             remaining essentially unchanged. 
+             It was popularised in the 1960s 
+             with the release of Letraset sheets 
+             containing Lorem Ipsum passages, 
+             and more recently with desktop 
+             publishing software like Aldus PageMaker 
+             including versions of Lorem Ipsum.
+        </p>
+    </section>
+    
+</body>
+</html>

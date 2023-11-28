@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+ 
+    margin: 0;
+}
+
+.item{
+    display:flex;
+    justify-content: center;
+    border:1px solid;
+    font-size:1.2rem;
+    font-weight: bold;
+
+}
+
+/*
+https://flatuicolors.com
+*/
+
+.color1{
+    background-color: #ffcccc;
+}
+
+.color2{
+    background-color: #ff9f1a;
+}
+
+.color3{
+    background-color: #ff3838;
+}
+
+.color4{
+    background-color: #3ae374;
+}
+
+.color5{
+    background-color: #7158e2;
+}

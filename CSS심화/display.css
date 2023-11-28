@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/*
+float의 사전적 의미는 "뜨다" 이다.
+만약 HTML 요소에 float이 적용되면
+HTML 요소는 원래의 흐름에서 벗어나
+둥둥 떠다니듯 배치가 된다.
+
+그리하여 인접한 텍스트 또는 인라인 요소가
+그 주위를 자연스럽게 감싸게 된다.
+
+
+float 속성
+
+none - 기본값으로 요소를 띄우지 않음
+left - 왼쪽에 뛰움
+right -오른쪽에 뛰움
+inherit - 부모 요소로부터 상속함
+initial - 기본값으로 설정함
+
+clear 속성
+
+clear는 취소하다 라는 뜻으로 
+float: left; 혹은 float: right; 값을
+취소한다.
+
+
+*/
+
+nav {background-color: pink;
+height: 50px;
+margin: 3em 0;}
+
+nav>ul {list-style:none;
+/* 목록앞의 모양 - 제거 */}
+
+#nv-lft li {
+background-color:#520;
+float: left;/* 메뉴들 나란히 배치 */
+margin-right: 10px;	
+margin-top: 10px;
+}
+
+
+ /* 우측 메뉴  */
+#nv-rgt>ul {
+ border: 1px solid red;	
+ float: right;/* 우측 메뉴용 */
+ margin: 0;
+}
+
+#nv-rgt li {
+ background-color: #260;
+ float: left;/* 메뉴들 나란히 배치 */
+ margin-right: 10px;
+ margin-top: 15px;		
+}
+
+
+
+nav li:hover {
+background-color:#e50; }
+
+nav a {padding:0.7em 0.3em;
+text-decoration: none;
+text-transform: capitalize;}
+
+nav a:link, nav a:visited {
+ color: #fff; }
+nav a:hover, nav a:active {
+ color: #520; }
+
+
+
+/******************* 1 *******************/
+section img {
+ width: 250px; 
+ height: 250px;	}
+
+/******************* 1 *******************/
+
+/******************* 2 *******************/
+
+/*여기까지 하면 이미지가 테두리가
+section 밖으로 튀어 나온다.
+*/
+
+#sec01 img {
+ float: left; 
+ margin-right: 1em;}
+
+
+/******************* 2 *******************/
+
+
+/******************* 3 *******************/
+
+/*sec01만 먼저, 나중에 sec02*/
+#sec01, #sec02 {
+	/* A, B, C, ... 는 그룹선택자
+동시에 여러선택자를 불러와 
+같은 스타일을 적용함  */
+	width: 40%;
+	float: left;
+	margin-right: 1.5%;
+}
+/******************* 3 *******************/
+
+
+/******************* 4 *******************/
+
+#sec02 img {
+ float: right; 
+ margin-left: 1em;}
+
+/******************* 4 *******************/
+
+
+/******************* 5 *******************/
+	
+#sec02>p {
+ text-align: right;	}
+
+/******************* 5 *******************/
+
+
+/******************* 5 *******************/
+#sec03 {
+ clear: both;	
+ /* float의 영향을 해제시킴 */
+ 
+ overflow:hidden;
+ /* 자식들이 float으로 부모를 벗어나면
+ 부모의 높이값은 줄어듦.
+ 부모의 형태를 유지하려면  overflow:hidden;
+ 을 줌*/}
+
+/******************* 5 *******************/
+
+#sec03>p {border: 1px solid;	
+ float: left;
+ width: 30%;}
+
+
+#sec04 {clear: both; }
+
+#sec04 {overflow: hidden;}
+
+#sec04>p {border: 1px solid red;
+float: right;
+width: 25%; }
+
+#sec05 {clear: both;/*
+float의 영향 해제 */
+
+overflow: hidden;/* 
+부모의 형태 유지 */}
+
+#sec05>p {
+ background-color: #aef;
+ width: 25%;}
+
+.p-lft {float: left;}
+.p-rgt {float: right;}
+
+

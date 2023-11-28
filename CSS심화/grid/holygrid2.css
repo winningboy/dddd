@@ -1,0 +1,37 @@
+body{
+    width: 80vw;
+    height:80vh;
+    margin: 0;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+    'header header'
+    'main side'
+    'footer footer';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+main{
+    background-color: chocolate;
+    grid-area: main;
+}
+
+aside{
+    background-color: red ;
+    grid-area: side;
+}
+
+footer{
+    background-color: #3dc1d3;
+    grid-area: footer;
+}

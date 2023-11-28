@@ -1,0 +1,15 @@
+.container{
+    text-align: center;
+}
+
+.clock{
+    width: 200px; margin: 5px auto;
+    /* margin을 auto로 준 이유: 
+       margin: [] []; 두개만 입력해 주면
+       상하, 좌우 위치가 설정 되는데
+       auto를 주면, 양쪽 마진이 자동으로
+       반반씩 설정되기 때문이다. */
+    border: 2px solid black;
+    border-radius: 10px;
+    /*테두리 둥글게*/
+}

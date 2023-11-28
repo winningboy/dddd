@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+          문서의 흐름
+
+          텍스트, 이미지 등의 요소들은 기본적으로 왼쪽에서 오른쪽으로,
+          또는 위에서 아래로 진행이 된다. 그러나 float을 사용하게 되면
+          기본적인 문서의 흐름을 제어할 수 있다.
+
+          float
+
+          요소의 위치를 변경하기 위해 사용하는 속성들은 크게 두 가지 유형으로
+          구분할 수 있다.
+          한 가지는 문서의 흐름을 유지한 채 원래 자리를 기준으로 위치를 변경하는
+          유형이고, 또 다른 한 가지는 요소의 문서의 흐름에서 제외시킨 채
+          위치를 변경하는 유형이다.
+
+          float은 요소를 문서의 흐름에서 제외시키는 속성으로, 부모요소의 왼쪽
+          또는 오른쪽 면에 붙는 형태를 가지고있다.
+
+          속성 값
+          left: 요소를 부모 왼쪽에 배치.
+          right: 요소를 부모 오른쪽에 배치.
+          
+
+
+        */
+        #a{width:100px; height: 50px;
+           background-color: red;
+           float:right;
+        }
+        #b{width:100px; height:50px;
+           background-color:yellow;
+           float:left;}
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <p>우리는 float을 공부하고 있습니다.</p>
+    <p>우리는 float을 공부하고 있습니다.</p>
+    <p>우리는 float을 공부하고 있습니다.</p>
+    <p>우리는 float을 공부하고 있습니다.</p>
+    <p>우리는 float을 공부하고 있습니다.</p>
+    
+</body>
+</html>

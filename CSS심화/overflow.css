@@ -1,0 +1,13 @@
+#ol01{border: 4px dotted orange;
+padding:2em 3em;}
+
+#ol01>li {border: 1px solid;
+          background-color: bisque;
+          width:500px; height: 100px;
+          margin-bottom: 40px;
+          font-size:2em;
+          line-height: 3;}
+          
+.ov01 {overflow: visible;}
+.ov02 {overflow: hidden;}
+.ov03 {overflow: scroll;}

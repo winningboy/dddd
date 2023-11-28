@@ -1,0 +1,43 @@
+*{box-sizing:border-box;}
+/*border-box: 패딩을 추가해도, 영역이 확장되지 않음 */
+
+.menu{
+    width:200px; height: 50px;
+    background-color: aqua;
+    position:fixed; left: 50px;
+/*postion:fixed : 스크롤바를 내려도 현 위치에 고정되어 움직이지
+                  않게 해줌. */ 
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: space-around;
+/*justify-content: flex 아이템 주축(x축) 방향 정렬.
+  space-around   : 간격을 균등하게 만들어 줌.
+*/
+    align-items: center;
+/*aling-items: flex 아이템 교차축(y축) 방향 정렬
+*/
+   
+}
+
+.menu > span:hover{
+/* "menu > span": 메뉴 밑 span 태그에
+    hover: 마우스를 올렸을때 
+*/
+border-bottom: 3px solid white;
+cursor:pointer;
+/*cursor:pointer: 마우스 포인터가 
+                  손가락 모양으로 바뀜
+*/
+}
+
+.content{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div:nth-child(2){background-color: coral;}
+div:nth-child(3){background-color: violet;}
+div:nth-child(4){background-color: teal;}

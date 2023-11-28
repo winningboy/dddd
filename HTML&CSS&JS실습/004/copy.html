@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>복사하기</h1>
+    <textarea id="text"></textarea> <br>
+    <button id="copy">복사</button>
+    <script>
+        document.getElementById("copy").onclick = function(){
+            var text = document.getElementById("text");
+            text.select();
+            //select 메서드는 글을 드래그하듯 선택해준다.
+            document.execCommand("copy");
+            //편집가능한 부분에 대해, 명령어를 선택하여 실행시켜주는 메서드이다.
+            //copy는 복사해주는 명령어이다.
+            alert("복사되었습니다.")
+        }
+
+
+
+    </script>
+</body>
+</html>

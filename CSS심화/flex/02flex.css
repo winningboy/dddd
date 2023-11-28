@@ -1,0 +1,12 @@
+.container{
+    background-color: tomato;
+    display:flex;
+    height: 200px;
+
+}
+
+.item{
+    background-color: blue;
+    color:white;
+    border:1px solid aqua;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>문자열 타입</h1>
+    <p id="str"></p>
+
+    <script>
+        var firstStr = "문자열 입니다."
+        var secondStr = '문자열 입니다.'
+        var thirdStr = "나의 이름은 '갑돌이'야 "
+        var fourthStr = '나의 이름은 "갑순이"야 '
+
+        document.getElementById("str").innerHTML =
+            firstStr + "<br>" + secondStr + "<br>" + thirdStr + "<br>" + 
+            fourthStr + "<br>"; 
+    </script>
+</body>
+</html>

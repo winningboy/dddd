@@ -1,0 +1,113 @@
+/* 가운데 정렬은 생각보다 어렵다. 왜냐하면
+    수평 가운데 정렬 text-align: center는 있는데
+    수직 가운데 정렬은 없기 때문이다.
+    
+    몇가지 있긴 한데 방법이 그렇게 신통하지 않다
+    
+    line-height display: table 등등. 그래서 그냥
+    flex를 사용해서 할거다. 배운거기도 하고.*/
+
+
+body{
+    width: 80vw;
+    height:80vh;
+    margin: 0;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+    'header header'
+    'main side'
+    'footer footer';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+h1{
+    margin-left:1rem;
+}
+
+
+.itemmain{
+    display:grid;
+    grid-template-columns: 3fr;
+}
+.item{
+    /*container에 flex를 먹인게 아니라 item
+    에 먹였기 때문에 가로로 배치가 안되는거다.*/
+    display:flex;
+    justify-content:center;
+}
+
+#sec01{
+    margin:0px 20px;
+
+}
+
+section img{
+    width:250px;
+    height: 250px;
+}
+
+#sec01 img{
+    
+    float:left;
+    margin-right: 1em;
+}
+
+.color1 {
+    background-color:#55efc4;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;
+}
+
+.color2 {
+    background-color:#ff7675;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;  
+}
+.color3 {
+    background-color:#fdcb6e;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;    
+}
+.color4 {
+    background-color:#a29bfe;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;    
+}
+.color5 {
+    background-color:#00b894;
+        
+}
+
+
+header{
+    background-color: #c44569 ;
+    grid-area: header;
+    display: flex;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;
+}
+
+main{
+    background-color: #ecf0f1;
+    grid-area: main;
+    height:auto;
+}
+
+aside{
+    background-color: #574b90;
+    grid-area: side;
+}
+
+footer{
+    background-color: #3dc1d3;
+    grid-area: footer;
+    display: flex;
+    justify-content: center; /*가로 수평 정렬 나중에 */
+    align-items:center;
+}

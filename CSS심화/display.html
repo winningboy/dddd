@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+	<h1>float - 부유</h1>
+
+	<ul>
+		<li>float:left; 띄워서 좌측으로</li>
+		<li>float:right; 띄워서 우측으로</li>
+	</ul>
+
+	<nav id="nv-lft">
+		<ul>
+			<li><a href="#sec01">section-1</a></li>
+			<li><a href="#sec03">section-3</a></li>
+			<li><a href="#sec04">section-4</a></li>
+			<li><a href="#sec05">section-5</a></li>
+		</ul>
+	</nav>
+
+	<nav id="nv-rgt">
+		<ul>
+			<li><a href="#sec01">section-1</a></li>
+			<li><a href="#sec03">section-3</a></li>
+			<li><a href="#sec04">section-4</a></li>
+			<li><a href="#sec05">section-5</a></li>
+		</ul>
+	</nav>
+
+
+
+	<!--******************* 1 ******************-->
+<pre style="font-family: sans-serif;clear: both;">
+ [용도-1] 이미지 주변을 둘러싸는 텍스트용.
+
+요소에 float을 적용하면, 해당 요소는 뜬 상태가 된다.
+요소가 있던 공간이 비면서, 빈 공간을 채우기 위해 그 다음의 요소가 밀고 올라온다.
+밀고 올라온 요소의 컨텐츠(글자)는 주변을 둘러싸면서 나타난다.
+
+ [용도-2] 나란히 배치 불가능한 요소를 나란히 배치하는용.
+나란히 배치하고픈 요소들에 float을 적용하면 해당 요소는 뜬 상태가 되면서 나란히 오게 된다.
+(요소안의 글자가 많은 경우에는 예외. 직접 가로를 줄여야 됨)
+
+ -나란히 배치시킨 요소들의 다음 요소는 위로 밀고 올라오기 때문에 제자리로 보내기 위해 clear:both;로 float의 영향을 해제 시켜야 된다.
+ -자식들이 float에 적용되면 부모요소는 높이값이 사라져서 형태가 유지되지 않는다.
+  이럴 땐 부모요소에 직접 높이값을 주어야 된다.
+</pre>
+
+	<!--******************* 1 ******************-->
+	<!--******************* 2 ******************-->
+	<section id="sec01">
+		<h2>img에 float:left; 적용</h2>
+		<!-- https://www.lipsum.com/ -->
+		<p>
+			<img alt="avocado" src="img/avocado.jpg">
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+	</section>
+
+	<!--******************* 2 ******************-->
+	<!--******************* 3 ******************-->
+
+	<section id="sec02">
+		<h2>img에 float: right; 적용</h2>
+		<p>
+			<img alt="avocado" src="img/avocado.jpg">
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+	</section>
+
+	<!--******************* 3 ******************-->
+	<!--******************* 4 ******************-->
+	<!--2.3번은 img에 float 적용 4번은 p에게 float을 적용함-->
+
+	<section id="sec03">
+		<h2>p들에게 float:left; 적용</h2>
+
+		<p>
+			[p-1] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+		<p>
+			[p-2] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+	</section>
+
+	<!--******************* 4 ******************-->
+
+
+	<section id="sec04">
+		<h2>p들에게 float:right; 적용</h2>
+
+		<p>
+			[p-3] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+		<p>
+			[p-4] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+	</section>
+
+	<section id="sec05">
+		<h2>p-5에게 float:left; , p-6에게 float:right; 적용</h2>
+
+		<p class="p-lft">
+			[p-5] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+		<p class="p-rgt">
+			[p-6] <br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Morbi bibendum varius porttitor. Quisque pulvinar fermentum
+			dolor, non eleifend risus ultrices nec. Ut libero lectus, semper eu
+			dui non, posuere scelerisque ipsum. Nunc ullamcorper fermentum risus
+			at dapibus. Sed non erat fermentum, iaculis odio vitae, aliquam
+			augue. Vestibulum ultricies euismod nibh quis semper. Donec quis mi
+			in urna maximus euismod. Curabitur purus urna, aliquet quis purus
+			non, tincidunt maximus ipsum.
+		</p>
+	</section>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

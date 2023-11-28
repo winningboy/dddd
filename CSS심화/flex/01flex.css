@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+/* 
+
+content-box : 콘텐트 영역을 기준으로 크기를 정한다.
+border-box : 테두리를 기준으로 크기를 정한다.
+initial : 기본값으로 설정한다.
+inherit : 부모 요소의 속성값을 상속받는다. 
+
+*/
+
+
+body{
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    height:300px;
+    flex-direction: column-reverse;
+
+    /* flex-direction: 주축 설정
+       row: 기본 값.
+       row-reverse: 주축 행이 반대로 적용 됨.
+       column: 교차축으로 설정.
+       column-reverse 교차축이 반대로 적용 됨. 
+    */
+
+}    

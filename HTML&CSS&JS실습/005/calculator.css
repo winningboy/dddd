@@ -1,0 +1,62 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* https://flatuicolors.com/ */
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5cd79;
+    height:100vh;
+}
+
+.calculator{
+    width:287px;
+    background-color: #596275;
+    border:1px solid black;
+    padding:5px;
+}
+
+.calculator form{
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+}
+
+.calculator form input{
+    border:2px solid black;
+    grid-auto-rows: 50px ;
+    cursor: pointer;
+    /* 마우스 모양이 손 모양으로 바뀜 */
+}
+
+
+.calculator form input[type='text']{
+    grid-column: span 4;
+    text-align: right;
+}
+
+
+.calculator form input:hover{
+    box-shadow: 3px 3px 3px  black;
+}
+
+.calculator form .clear{
+    background-color: #546de5;
+}
+
+.calculator form .operator{
+    background-color: #e15f41;
+}
+
+.calculator form .dot{
+    background-color: #3dc1d3;
+}
+
+.calculator form .result{
+    grid-column:span 4;
+}

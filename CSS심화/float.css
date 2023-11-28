@@ -1,0 +1,50 @@
+section img{
+    width:250px;
+    height: 250px;
+}
+
+#sec01 img{
+    
+    float:left;
+    margin-right: 1em;
+}
+
+#sec01, #sec02 {
+    float:left;
+    width: 40%;
+    margin-right: 1.5%;
+}
+
+#sec02 img{
+    float:right;
+    margin-left: 1em;
+}
+
+#sec03{
+    clear:both;
+}
+
+#sec03>p{
+    border: 1px solid;
+    float: left;
+    width:30%;}
+
+#sec04{clear:both;}
+
+#sec04>p{
+    border: 1px solid red;
+    float:right;
+    width:25%;
+}
+
+#sec05{
+    clear: both;
+}
+
+#sec05>p{
+    background-color: orange;
+    width:25%;
+}
+
+.p-lft {float: left;}
+.p-rgt {float: right;}

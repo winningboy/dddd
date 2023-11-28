@@ -1,0 +1,19 @@
+h2 {border-left:10px solid;
+    background-color: #022;
+    padding:0.3em 0.2em;
+    color: #399;}
+
+section{border:3px dashed #399;
+        margin: 3em 0;
+        padding: 1em;}
+
+/* px : 고정된 절대 값 
+   em : 환경에 따라 변하는 값.
+        em은 같은 엘리먼트에서 지정된 font-size를
+        기준으로 px로 바뀌어 화면에 표시된다.
+        만약 같은 엘리먼트에서 설정된 폰트 값이
+        없을 경우, 상위 요소의 폰트 사이즈가
+        기준이 된다.
+
+        일반적으로 1em = 16px로 환산 된다.
+*/        
